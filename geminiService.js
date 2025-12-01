@@ -1,6 +1,5 @@
 const API_KEY = "AIzaSyAoy2uQDHUjVRwPPjeh8umlAdGe4HqBrng";
-const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
-
+const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${AIzaSyAoy2uQDHUjVRwPPjeh8umlAdGe4HqBrng}`;
 async function callGemini(prompt, base64Image = null) {
     const body = {
         contents: [
